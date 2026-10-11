@@ -21,7 +21,7 @@ Table de données locale (mock, pas d'API) avec tri, filtre, pagination et séle
 
 ## 4. Composants (SOLID, single responsibility, dumb/générique)
 
-Voir `CLAUDE.md` pour les conventions de code.
+Voir `README.md` pour les conventions de code.
 
 - `DataTable.vue` : composant conteneur générique, orchestration uniquement — reçoit `data`/`columns` en props, appelle `useDataTable` (cf. section Composables) pour tout le state UI, compose les sous-composants ci-dessous via props/events, remonte les intentions métier (`edit`, `delete`, `save` — avec le `patch` des valeurs éditées, `cancel`, `action`, ...) à l'appelant sans les interpréter, et remonte la sélection courante via `update:selectedIds` (ids métier des lignes sélectionnées)
 - `DataTableTitleBar.vue` : bandeau titre en haut du tableau — prop `title` (défaut, ex. `"Data table"`) affiché si aucun contenu n'est fourni ; expose un slot nommé `header` pour injecter un composant précis à la place du titre par défaut
