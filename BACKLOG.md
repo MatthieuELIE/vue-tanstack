@@ -1,6 +1,6 @@
 # Backlog — Data Table TanStack
 
-Découpage de `PLAN.md` en US indépendantes, chacune implémentable par une session différente. Respecter `CLAUDE.md` (SOLID, composants dumb/génériques) sur toutes les US.
+Découpage de `PLAN.md` en US indépendantes, chacune implémentable par une session différente. Respecter `README.md` (SOLID, composants dumb/génériques) sur toutes les US.
 
 ## Suivi
 
